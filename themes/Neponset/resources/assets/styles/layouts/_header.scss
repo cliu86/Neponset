@@ -1,0 +1,51 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.banner {
+  .navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      //radio 4.77
+      height: 55px;
+      width: 262px;
+    }
+  }
+  #menu-main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    a{
+      color:$blue;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+    @media(min-width: 991px){
+      li{
+        &:after {
+          content: '';
+          width: 0;
+          height: 12px;
+          position: absolute;
+          border: 1px solid $light_blue;
+          top: 15px;
+        }
+      }
+      li:first-of-type{
+        &:after {
+          display: none;
+        }
+      }    
+    }
+  }
+}
