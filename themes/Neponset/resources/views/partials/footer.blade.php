@@ -18,7 +18,7 @@
             <a href="#" class="mr-2"><img src="@asset('images/instagram.svg')"/></a>
           </div>
           <h4><b>P: 617.436.2000</b></h4>
-          <p>57 QUINCY SHORE DRIVE<br>QUINCY, MA 02171</p>
+          <p class="font-weight-bold">57 QUINCY SHORE DRIVE<br>QUINCY, MA 02171</p>
         </div>
       </div>
       <div class="col-md-7 col-sm-12 footer-right footer-content">

@@ -16,6 +16,8 @@
     </div> 
 
     <div class="row custom-page__sub-content">
+      <span class="hero-title-mobile">@php echo  $hero_title; @endphp</span>
+
       <?php if( get_field('sub-desc') ): ?>
         <p>@php echo get_field('sub-desc'); @endphp</p>
       <?php endif; ?>
@@ -24,6 +26,9 @@
         <a href="@php echo get_field('sub-link'); @endphp" class="st-btn-primary" >@php echo get_field('sub-link-text'); @endphp</a>
       @php endif; @endphp
     </div>
+
+    @include('partials.residences')
+    
 
     @include('partials.content-page')
   @endwhile

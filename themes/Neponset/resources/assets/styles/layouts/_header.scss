@@ -7,45 +7,96 @@
 }
 
 .banner {
+  .navbar{
+    background: white;
+    padding:0;
+    // margin-top: 30px;
+  }
+  .main-nav-wrapper{
+    @media(min-width: 991px){
+      padding: 0 0 0 8.5em;
+    }
+  }
+  .navbar-phone-call img{
+    margin-left: 1em;
+    height:30px;
+    width: 30px;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    display:block;
+    @media(min-width: 991px){
+      display:none;
+    }
+  }
+  .navbar-toggler{
+    height: 65px;
+    background-color: $blue;
+    border-radius: 0;
+    outline: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url('../../images/menu-icon.svg');
+    background-size: contain;
+    height: 30px;
+    width: 40px;
+  }
   .navbar-brand{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 1em;
     img{
       //radio 4.77
-      height: 55px;
-      width: 262px;
+      @media(min-width: 991px){
+        height: 55px;
+        width: 262px;
+      }
+      height: 40px;
+      width: 190px;
     }
   }
-  #menu-main-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  #navbarResponsive{
+    background-color: $blue;
     a{
-      color:$blue;
+      color:white;
+      text-align: center;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: .8px;
     }
     @media(min-width: 991px){
-      li{
-        &:after {
-          content: '';
-          width: 0;
-          height: 12px;
-          position: absolute;
-          border: 1px solid $light_blue;
-          top: 15px;
-        }
+      .navbar-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
-      li:first-of-type{
-        &:after {
-          display: none;
+      background-color: transparent;
+      a{
+        color:$blue;
+        padding: 0 1em;
+      }
+      @media(min-width: 991px){
+        li{
+          &:after {
+            content: '';
+            width: 0;
+            height: 12px;
+            position: absolute;
+            border: 1px solid $light_blue;
+            top: 28px;
+          }
         }
-      }    
+        li:first-of-type{
+          &:after {
+            display: none;
+          }
+        }    
+      }
     }
   }
 }
+
