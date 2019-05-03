@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content') 
-  <section class="home-hero row"></section>
+  <section class="home-hero row">
+     <img src="@asset('images/Neponset_Logo.png')">
+     <div class="home-hero__text">
+        <span class="home-hero__text__city">CITY</span>
+        <span class="home-hero__text__life">LIFE</span>
+     </div>
+  </section>
   <section class="home-content-below-hero row my-5">
     <h2><b>THE NEPONSET</b></h2>
     <h2>City Life, Beach Life, Good Life.</h2>
@@ -16,9 +22,9 @@
   </section>
 
   <section class="home-features">
-    <div class="home-feature home-feature__residences my-5">
+    <div class="home-feature home-feature__residences mt-4">
         <div class="feature-image">
-            <img src="@asset('images/Bath_2.jpg')">
+            <img src="@asset('images/Bath_2.jpg')" class="img-fluid">
         </div>
         <div class="feature-content">
             <h1>Residences</h1>
@@ -27,20 +33,20 @@
         </div>
     </div>
 
-     <div class="home-feature home-feature__floorplans my-5">
+     <div class="home-feature home-feature__floorplans mt-4">
         <div class="feature-content">
             <h1>Floor Plans</h1>
             <p>Select the plan that best fits your lifestyle</p>
             <a href="{{ home_url('/residences') }}" class="st-btn-primary">VIEW FLOOR PLANS</a>
         </div>
         <div class="feature-image">
-            <img src="@asset('images/LivingC.jpg')">
+            <img src="@asset('images/LivingC.jpg')" class="img-fluid">
         </div>
     </div>
 
-     <div class="home-feature home-feature__amenities my-5">
+     <div class="home-feature home-feature__amenities mt-4">
         <div class="feature-image">
-            <img src="@asset('images/cheers.jpg')">
+            <img src="@asset('images/cheers.jpg')" class="img-fluid">
         </div>
         <div class="feature-content">
             <h1>Amenities</h1>
@@ -50,7 +56,7 @@
     </div>
   </section>
 
-  <section class="home-location row">
+  <section class="home-location row mt-5">
     <div class="home-location__heading">
       <h1>LOCATION</h1>
       <p class="mb-5 mt-4">At The Neponset, you will enjoy a walkable lifestyle with nearby restaurants and parks, be on the Red Line for a quick ride into Cambridge 
@@ -61,25 +67,29 @@
   </section>
 
   <section class="image-gallery row">
-    <div class="col-md-6 col-12 gallery-img img-big" data-content="Break Out Your Beach Chair">
+    <div class="col-md-6 col-12 gallery-img img-big" data-content="10 Minute Commute into Downtown">
 
       <img src="@asset('images/city-view.jpg')" class="img-fluid">
     </div>
-    <div class="col-md-3 col-6 gallery-img img-small" data-content="Break Out Your Beach Chair">
-      <img src="@asset('images/walking-on-road.jpg')" class="img-fluid">
+    <div class="col-md-3 col-6 gallery-img img-small"
+      style="background-image:url('@asset('images/walking-on-road.jpg')')"
+      data-content="Break Out Your Beach Chair">
     </div>
-    <div class="col-md-3 col-6 gallery-img img-small" data-content="Break Out Your Beach Chair">
-      <img src="@asset('images/DSC8460.jpg')" class="img-fluid">
+    <div class="col-md-3 col-6 gallery-img img-small" 
+      style="background-image:url('@asset('images/DSC8460.jpg')')"
+      data-content="Break Out Your Beach Chair">
     </div>
-
-    <div class="col-md-3 col-6 gallery-img img-small" data-content="Break Out Your Beach Chair">
-      <img src="@asset('images/eating.jpg')" class="img-fluid">
+    <div class="col-md-3 col-6 gallery-img img-small" 
+      style="background-image:url('@asset('images/eating.jpg')')"
+      data-content="Break Out Your Beach Chair">
     </div>
-    <div class="col-md-3 col-6 gallery-img img-small" data-content="Break Out Your Beach Chair">
-      <img src="@asset('images/store-front.jpg')" class="img-fluid">
+    <div class="col-md-3 col-6 gallery-img img-small" 
+      style="background-image:url('@asset('images/store-front.jpg')')"
+      data-content="Break Out Your Beach Chair">
     </div>
-    <div class="col-md-6 col-12 gallery-img img-big" data-content="Break Out Your Beach Chair">
-      <img src="@asset('images/habor.jpg')" class="img-fluid">
+    <div class="col-md-6 col-12 gallery-img img-big"
+      style="background-image:url('@asset('images/habor.jpg')')"
+      data-content="Break Out Your Beach Chair">
     </div>
   </section>
 

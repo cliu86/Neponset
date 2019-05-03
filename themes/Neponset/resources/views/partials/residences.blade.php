@@ -1,3 +1,4 @@
+<?php if(is_page( 'Residences' )): ?>
 <div class="row residences">
     <?php if( get_field('first_image') ): ?>
         <img class="residences__first-img" src="@php echo get_field('first_image')['url']; @endphp" /> 
@@ -24,9 +25,8 @@
                     </ul>
                 <?php endif;?>  
                 <?php if( get_field('button_link') && get_field('button_text') ): ?>
-                    <a class="list-features__btn-make-appointment" href="<?php echo get_field('button_link'); ?>"><?php echo get_field('button_text'); ?></a>
+                    <a class="list-features__btn-make-appointment st-btn-secondary" href="<?php echo get_field('button_link'); ?>"><?php echo get_field('button_text'); ?></a>
                 <?php endif; ?>    
-                <a class="list-features__btn-make-appointment st-btn-secondary" href="">Schedule appointment</a>
             </div>
         </div>
     </div>
@@ -45,6 +45,6 @@
               <img class="residences__bath-img-right" src="@php echo get_field('last_image')['url']; @endphp" /> 
             </div>
         <?php endif; ?>    
-    </div>
-        
+    </div>  
 </div>
+<?php endif; ?>

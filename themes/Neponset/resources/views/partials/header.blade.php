@@ -10,7 +10,7 @@
     </nav>
   </div> --}}
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid main-nav-wrapper">
       <a class="navbar-brand" href="{{ home_url('/') }}"><img src="@asset('images/Neponset_Logo_Long.png')"></a>
       <a class="navbar-phone-call" href="{{ home_url('/') }}"><img src="@asset('images/call.svg')"></a>
@@ -45,8 +45,12 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ home_url('/gallery') }}">Gallery</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ home_url('/contact') }}">Contact</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropbtn" href="{{ home_url('/contact') }}">Contact</a>
+            <div class="dropdown-content">
+              <a class="nav-link" href="{{ home_url('/hisotry') }}">History</a>
+              <a class="nav-link" href="{{ home_url('/poi-map') }}">POI Map</a>
+            </div>
           </li>
         </ul>
       </div>
