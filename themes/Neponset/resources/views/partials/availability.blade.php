@@ -35,12 +35,13 @@
                                             data-download-link ="<?php echo $_2bedrooms_link;?>"
                                         />
                                     </div>
-                                    {{-- <div class="col-12 plan-detail">
-                                        <h2><?php echo $_2bedrooms_title;?></h2>
+
+                                     <!-- <div class="col-12 plan-detail">
+                                        <h2><?php //echo $_2bedrooms_title;?></h2>
                                         <a href="#" class="st-btn-primary">SCHEDULE APPOINTMENT</a>
-                                        <a href="<?php echo $_2bedrooms_link;?>" class="download-floorplan">DOWNLOAD FLOORPLAN</a>
-                                        <img src="<?php echo $_2bedrooms_img['url'];?>" class="img-fluid"/>
-                                    </div> --}}
+                                        <a href="<?php //echo $_2bedrooms_link;?>" class="download-floorplan">DOWNLOAD FLOORPLAN</a>
+                                        <img src="<?php //echo $_2bedrooms_img['url'];?>" class="img-fluid"/>
+                                    </div> -->
                                 <?php endwhile; ?>
                             </div>
 

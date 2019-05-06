@@ -1,0 +1,74 @@
+.page-id-26 footer.content-info{
+    display:none;
+}
+
+.contact{
+    min-height: 750px;
+    .footer-content{
+        justify-content: center;
+        h1{
+            font-weight: 200;
+            font-size: 3rem;
+            @media(min-width: 991px){
+                font-size: 3.8rem;
+            }
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+    }
+    .footer-right-no-form{
+        @media(min-width: 991px){
+            top: -200px;
+        }
+    }
+    .footer-right{
+        .contact-forms__buyer,
+        .contact-forms__broker{
+            display: none;
+            @media(min-width: 991px){
+                width: 70%;
+                margin: auto;
+            }
+        }
+        .contact-form-active{
+            display: inline-block;
+        }
+    }
+    .gform_wrapper{
+        margin-top: 3em;
+        .gform_body .gfield_label{
+            display: none;
+        }
+        input[type="text"]{
+            border:none;
+            border-bottom: 2px solid $blue;
+            &:focus, &:active{
+                outline: none;
+            }
+        }
+        input::placeholder {
+            color: lighten($blue, 20%);
+            font-size: .9rem;
+        }
+    }
+    #input_1_1_3_container, #input_1_1_6_container{
+        label{
+            display:none;
+        }
+    }
+    #input_2_1_3_container, #input_2_1_6_container{
+        label{
+            display:none;
+        }
+    }
+    //Textarea
+    textarea{
+        margin-top: 2em;
+        border: 2px solid $blue;
+    }
+    textarea::placeholder {
+        color: lighten($blue, 20%);
+        font-size: .9rem;
+    }
+}

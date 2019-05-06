@@ -1,0 +1,13 @@
+/* --------------- Gallery page ------------------  */
+.gallery-page{
+    @media(min-width: 991px){
+        margin-top: -4em;
+    }
+   .gallery-img{
+    @media(min-width: 991px){
+        border-top: 2.5* $image-gallery-border solid white;
+        border-right: 2.5*$image-gallery-border solid white;
+    }
+   }
+}
+

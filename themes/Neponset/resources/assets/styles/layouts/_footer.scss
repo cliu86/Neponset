@@ -1,7 +1,8 @@
-footer.content-info{
-    border-top:7px solid $blue;
+    footer.content-info{
+        border-top:7px solid $blue;
+    }
     .footer-content{
-        height: 380px;
+        min-height: 380px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -67,4 +68,3 @@ footer.content-info{
             }
         }
     }
-}

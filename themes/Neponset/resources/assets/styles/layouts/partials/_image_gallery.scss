@@ -1,0 +1,87 @@
+/* --------------- Image Gallery ------------------  */
+.home .image-gallery .img-small{
+    height: 20vh;
+    @media(min-width: 991px){
+        height: 40vh;
+    }
+    &:nth-of-type(3){
+      border-right: none;
+    }
+    @media(max-width: 990px){
+        &:nth-of-type(5){
+            border-right: none;
+        }
+    }
+  
+    border-right: $image-gallery-border solid white;
+}
+.home .image-gallery .img-big{
+    height: 20vh;
+    @media(min-width: 991px){
+        height: 40vh;
+    }
+    &:last-of-type{
+      border-right: none;
+    }
+}
+.image-gallery{
+    .gallery-img{
+        padding: 0;
+        height: 30vh;
+        background-position: center center;
+        border-top: $image-gallery-border solid white;
+        object-fit: cover;
+        background-size: cover;
+        @media(min-width: 991px){
+            border-right: $image-gallery-border solid white;
+        }
+    }
+    .gallery-img:after, .gallery-img:before {
+        position:absolute;
+        opacity:0;
+        transition: all 0.55s;
+    }
+    .gallery-img:after {
+        content:'\A';
+        width:100%; 
+        height:100%;
+        top:0; 
+        left:0;
+        background:rgba(0,0,0,0.8);
+    }
+    .gallery-img:before {
+        content: attr(data-content);
+        width:100%;
+        color:white;
+        z-index:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        box-sizing:border-box;
+        height: 100%;
+        @media(min-width: 991px){
+            padding: 0 5em;
+            font-size: 3.5em;
+        }
+        padding: 0 2em;
+        font-size: 1.5em;
+    }
+    .gallery-img.img-small:before{
+        font-size: 1em;
+        padding: 0 1em;
+        @media(min-width: 991px){
+            font-size: 2.5em;
+            padding: 0 3em;
+        }
+     }
+    .gallery-img.text-small:before{
+         @media(min-width: 991px){
+            font-size: 1.5em;
+         }
+         font-size: 1em;
+     }
+    .gallery-img:hover:after, .gallery-img:hover:before {
+        opacity:1;
+    }
+}

@@ -1,0 +1,16 @@
+/* --------------- Updates ------------------  */
+.updates{
+    .updates-item{
+        border:none;
+        padding: 2em;
+        @media(min-width:991px){
+            padding: 2em 5em;
+        }
+        img{
+            height: 35vh;
+        }
+        .card-body{
+            color: $blue;
+        }
+    }
+}

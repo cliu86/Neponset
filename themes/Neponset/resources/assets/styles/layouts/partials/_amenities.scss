@@ -1,0 +1,23 @@
+/* --------------- Amenities ------------------  */
+.amenities{
+    .gallery-img{
+        height: 40vh;
+        &:nth-of-type(4),  
+        &:nth-of-type(5){
+            @media(min-width:991px){
+                flex: 0 0 50%;
+                max-width: 50%;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.location{
+    .vertical-image{
+        @media(min-width:991px){
+            overflow: hidden;
+            height: 60vh;
+        }
+    }
+}

@@ -89,3 +89,15 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+
+// ACF google map 
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = 'AIzaSyCyBcIVk5YKA6Jeov-nrVEPJNI2ESYBfzg';
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

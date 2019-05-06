@@ -28,7 +28,7 @@
             <a class="nav-link" href="{{ home_url('/residences') }}">Residences</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ home_url('/floor-plans') }}">Floor plans</a>
+            <a class="nav-link" href="{{ home_url('/availability') }}">Floor plans</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ home_url('/amenities') }}">Amenities</a>
