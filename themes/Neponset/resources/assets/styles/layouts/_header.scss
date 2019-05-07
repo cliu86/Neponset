@@ -10,38 +10,67 @@
   .navbar{
     padding:0;
   }
+  
   .nav-item{
     padding-left: 1em;
     padding-right: 1em;
-    &:after {
-      content: '';
-      width: 0;
-      height: 12px;
-      position: absolute;
-      border: 1px solid $light-blue;
-      top: 28px;
-      margin-left: -17px;
-    }
-    &:first-of-type{
+    @media(min-width: 991px){
       &:after {
-        display: none;
+        content: '';
+        width: 0;
+        height: 12px;
+        position: absolute;
+        border: 1px solid $light-blue;
+        top: 12px;
+        margin-left: -17px;
       }
-    }   
+      &:first-of-type{
+        &:after {
+          display: none;
+        }
+      }   
+    }
+    @media(min-width: 1150px){
+      &:after {
+        top: 18px;
+      }
+    }
+    @media(min-width: 1300px){
+      &:after {
+        top: 23px;
+      }
+    }
+    @media(min-width: 1650px){
+      &:after {
+        top: 28px;
+      }
+    }
+
+
   }
   .dropdown{
     &:after {
-      top: 15px;
+    
+      @media(min-width: 991px){
+        top: 10px;
+      }
+      @media(min-width: 1300px){
+        top: 13px;
+      }
     }
+    
   }
   .dropdown:hover{
-     a:after{
-      content: '';
-      width: 90px;
-      height: 1px;
-      background: $blue;
-      position: absolute;
-      left: 18px;
-      top: 39px;
+    @media(min-width: 991px){
+      a:after{
+        content: '';
+        width: 90px;
+        height: 1px;
+        background: $blue;
+        position: absolute;
+        left: 18px;
+        top: 39px;
+      }
     }
   }
   .navbar-active{
@@ -50,6 +79,7 @@
       @media(min-width: 991px){
         color :$blue !important;
       }
+      font-size: 1em;
       color: white;
     }
     .navbar-brand img{
@@ -57,7 +87,10 @@
     }
   }
   .main-nav-wrapper{
-    @media(min-width: 991px){
+    @media(min-width: 1300px){
+      padding: 0 0 0 4.5em;
+    }
+    @media(min-width: 1650px){
       padding: 0 0 0 8.5em;
     }
   }
@@ -93,6 +126,18 @@
     img{
       //radio 4.77
       @media(min-width: 991px){
+        height: 25px;
+        width: 119px;
+      }
+      @media(min-width: 1150px){
+        height: 35px;
+        width: 167px;
+      }
+      @media(min-width: 1300px){
+        height: 45px;
+        width: 214.5px;
+      }
+      @media(min-width: 1650px){
         height: 55px;
         width: 262px;
       }
@@ -110,6 +155,9 @@
       letter-spacing: .8px;
     }
     @media(min-width: 991px){
+      .nav-link--two-words{
+        min-width:120px;
+      }
       .navbar-nav{
         display: flex;
         justify-content: center;
@@ -123,6 +171,25 @@
         color:$blue; 
       } 
     }
+    @media(min-width: 1400px){
+      .nav-link--two-words{
+        min-width:140px;
+      }
+    }
+  }
+  .navbar-nav{
+    @media(min-width: 991px){
+      font-size: .8rem;
+    }
+    @media(min-width: 991px) and (max-width: 1100px){
+      font-size: .65rem;
+    }
+    @media(min-width: 1100px) and (max-width: 1299px){
+      font-size: .75rem;
+    }
+    @media(min-width: 1650px){
+      font-size: 1rem;
+    }
   }
 }
 
@@ -130,11 +197,7 @@
 .dropbtn {
   background-color: transparent;
   color: white;
-  font-size: 16px;
   border: none;
-  @media(min-width: 991px){
-   
-  }
 }
 .dropdown {
   position: relative;
@@ -142,11 +205,18 @@
 }
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: white;
-  min-width: 127px;
+  @media(min-width: 991px){
+   min-width: 134px;
+   position: absolute;
+  }
+  min-width: 100%;
   z-index: 1;
   left: 0;
+}
+.dropdown-content-contact{
+   min-width: 127px;
 }
 
 .dropdown-content a {
@@ -182,4 +252,19 @@
     background-color: white;
     color: $blue !important;
   } 
+}
+
+#navbardrop-contact-mobile{
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  &:hover{
+    background-color: $blue; 
+  }
+  .dropdown-menu{
+    border: none;
+    a{
+      color: $blue !important;
+    }
+  }
 }

@@ -1,13 +1,13 @@
 /* --------------- Image Gallery ------------------  */
 .home .image-gallery .img-small{
-    height: 20vh;
+    height: 18vh;
     @media(min-width: 991px){
         height: 40vh;
     }
     &:nth-of-type(3){
       border-right: none;
     }
-    @media(max-width: 990px){
+    @media(max-width: 450px){
         &:nth-of-type(5){
             border-right: none;
         }
@@ -16,7 +16,7 @@
     border-right: $image-gallery-border solid white;
 }
 .home .image-gallery .img-big{
-    height: 20vh;
+    height: 18vh;
     @media(min-width: 991px){
         height: 40vh;
     }
@@ -32,9 +32,14 @@
         border-top: $image-gallery-border solid white;
         object-fit: cover;
         background-size: cover;
+        @media(min-width: 768px) and (max-width: 990px){
+            height: 18vh;
+            border-right: $image-gallery-border solid white;
+        }
         @media(min-width: 991px){
             border-right: $image-gallery-border solid white;
         }
+
     }
     .gallery-img:after, .gallery-img:before {
         position:absolute;

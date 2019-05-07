@@ -2,7 +2,7 @@
 
 @section('content') 
   <section class="home-hero row">
-     <img src="@asset('images/Neponset_Logo.png')">
+     <img src="@asset('images/Neponset_Logo_color_White.png')">
      <div class="home-hero__text">
         <span class="home-hero__text__city">CITY</span>
         <span class="home-hero__text__life">LIFE</span>
@@ -37,7 +37,7 @@
         <div class="feature-content">
             <h1>Floor Plans</h1>
             <p>Select the plan that best fits your lifestyle</p>
-            <a href="{{ home_url('/residences') }}" class="st-btn-primary">VIEW FLOOR PLANS</a>
+            <a href="{{ home_url('/availability') }}" class="st-btn-primary">VIEW FLOOR PLANS</a>
         </div>
         <div class="feature-image">
             <img src="@asset('images/LivingC.jpg')" class="img-fluid">
@@ -62,14 +62,15 @@
       <p class="mb-5 mt-4">At The Neponset, you will enjoy a walkable lifestyle with nearby restaurants and parks, be on the Red Line for a quick ride into Cambridge 
       and Boston, or Stroll on the beautiful beach. 
       </p>
-      <a href="#" class="st-btn-secondary">Explore neighborhood</a>
+      <a href="{{ home_url('/location') }}" class="st-btn-secondary">Explore neighborhood</a>
     </div>    
   </section>
 
   <section class="image-gallery row">
-    <div class="col-md-6 col-12 gallery-img img-big" data-content="10 Minute Commute into Downtown">
-
-      <img src="@asset('images/city-view.jpg')" class="img-fluid">
+    <div class="col-md-6 col-12 gallery-img img-big" 
+      data-content="10 Minute Commute into Downtown"
+       style="background-image:url('@asset('images/city-view.jpg')')"
+      >
     </div>
     <div class="col-md-3 col-6 gallery-img img-small"
       style="background-image:url('@asset('images/walking-on-road.jpg')')"

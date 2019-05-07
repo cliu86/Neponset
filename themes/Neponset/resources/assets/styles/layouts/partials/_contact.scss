@@ -3,7 +3,7 @@
 }
 
 .contact{
-    min-height: 750px;
+    min-height: 100vh;
     .footer-content{
         justify-content: center;
         h1{
@@ -22,7 +22,15 @@
             top: -200px;
         }
     }
+    .footer-left{
+        @media(max-width: 990px){
+            order: 2;
+        }
+    }
     .footer-right{
+        @media(max-width: 990px){
+            order: 1;
+        }
         .contact-forms__buyer,
         .contact-forms__broker{
             display: none;
@@ -34,6 +42,10 @@
         .contact-form-active{
             display: inline-block;
         }
+        .btn-form-active{
+           background: $sky-blue;
+        }
+
     }
     .gform_wrapper{
         margin-top: 3em;
@@ -50,7 +62,25 @@
         input::placeholder {
             color: lighten($blue, 20%);
             font-size: .9rem;
+            font-weight: 500;
         }
+    }
+    #field_2_12{
+        h2{
+            text-align:center;
+            margin-top: 1.5em !important;
+        }
+    }
+    #field_2_10{
+        .gfield_label{
+            display: block;
+        }
+        textarea{
+            margin-top:0;
+        }
+    }
+    .gform_wrapper .gsection{
+        border:none;
     }
     #input_1_1_3_container, #input_1_1_6_container{
         label{
@@ -60,6 +90,31 @@
     #input_2_1_3_container, #input_2_1_6_container{
         label{
             display:none;
+        }
+    }
+    #input_2_13{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        flex-direction: column;
+        @media(min-width: 768px){
+           flex-direction: row;
+        }   
+        li{
+            width: 100%;
+            @media(min-width: 991px){
+                width: 33%;
+            }
+            input{
+                width: 16px;
+                height: 16px;
+            }
+           label{
+               margin-left: 5px;
+               margin-top: 4px;
+               color: $blue;
+               font-weight: 500;
+           }
         }
     }
     //Textarea

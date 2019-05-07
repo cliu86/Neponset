@@ -2,22 +2,24 @@
 .amenities{
     .gallery-img{
         height: 40vh;
+        @media(min-width:768px){
+            height: 25vh;
+        }
+        @media(min-width:991px){
+            height: 40vh;
+        }
         &:nth-of-type(4),  
         &:nth-of-type(5){
-            @media(min-width:991px){
+            @media(min-width:768px){
                 flex: 0 0 50%;
                 max-width: 50%;
                 overflow: hidden;
+                height: 25vh;
+            }
+            @media(min-width:991px){
+                height: 40vh;
             }
         }
     }
 }
 
-.location{
-    .vertical-image{
-        @media(min-width:991px){
-            overflow: hidden;
-            height: 60vh;
-        }
-    }
-}

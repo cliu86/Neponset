@@ -7,7 +7,7 @@
                         $gallery_img = get_sub_field('img');
                         $gallery_img_text = get_sub_field('text');
                     ?>
-                    <div class="col-md-4 col-12 gallery-img img-small text-small" 
+                    <div class="col-md-4 col-12 gallery-img img-small" 
                         style="background-image:url('<?php echo $gallery_img['url']; ?>')"   
                         data-content="<?php echo $gallery_img_text; ?>">
                     </div>

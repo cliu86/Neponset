@@ -13,7 +13,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid main-nav-wrapper">
       <a class="navbar-brand" href="{{ home_url('/') }}"><img src="@asset('images/Neponset_Logo_Long.png')"></a>
-      <a class="navbar-phone-call" href="{{ home_url('/') }}"><img src="@asset('images/call.svg')"></a>
+      <a class="navbar-phone-call" href="tel:6174362000"><img src="@asset('images/call.svg')"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,7 +28,7 @@
             <a class="nav-link" href="{{ home_url('/residences') }}">Residences</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ home_url('/availability') }}">Floor plans</a>
+            <a class="nav-link nav-link--two-words" href="{{ home_url('/availability') }}">Floor plans</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ home_url('/amenities') }}">Amenities</a>
@@ -45,13 +45,25 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ home_url('/gallery') }}">Gallery</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-none d-lg-block ">
             <a class="nav-link dropbtn" href="{{ home_url('/contact') }}">Contact</a>
-            <div class="dropdown-content">
-              <a class="nav-link" href="{{ home_url('/hisotry') }}">History</a>
-              <a class="nav-link" href="{{ home_url('/poi-map') }}">POI Map</a>
+            <div class="dropdown-content dropdown-content-contact">
+              <a class="nav-link link-open-buyer" href="{{ home_url('/contact/#buyer') }}">BUYER</a>
+              <a class="nav-link link-open-broker" href="{{ home_url('/contact/#broker') }}">BROKER</a>
             </div>
           </li>
+
+          <!-- Dropdown for mobile -->
+          <li class="nav-item dropdown d-sm-block d-md-none" id="navbardrop-contact-mobile">
+            <a class="nav-link dropdown-toggle" href="{{ home_url('/contact') }}"  data-toggle="dropdown">
+              Contact
+            </a>
+            <div class="dropdown-menu">
+              <a class="nav-link link-open-buyer"  href="{{ home_url('/contact/#buyer') }}">BUYER</a>
+              <a class="nav-link link-open-broker" href="{{ home_url('/contact/#broker') }}">BROKER</a>
+            </div>
+          </li>
+
         </ul>
       </div>
     </div>

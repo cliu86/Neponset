@@ -1,7 +1,7 @@
 <?php if(is_page( 'Updates' )): ?>
     <?php if( have_rows('card') ): ?>
         <section class="row">
-            <div class="updates col-md-6 offset-md-3 col-12 mb-5">
+            <div class="updates col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 mb-5">
                 <div class="row">
                     <?php while( have_rows('card') ): the_row(); 
                         $card_title = get_sub_field('title');

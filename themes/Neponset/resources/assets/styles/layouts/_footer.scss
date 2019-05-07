@@ -10,18 +10,26 @@
         align-items: center;
         color:$blue;   
     }
+    .click-to-call{
+        color: $blue;
+        &:hover{
+            text-decoration: none;
+            color: $sky-blue;
+        }
+    }
     .footer-left{
         background: $light-gray;
         text-align: center;
         order:1 ;
-        @media(min-width:991px){
+        @media(min-width:768px){
             order: 0;
             text-align: left;
         }
+
         .footer-left__logo{
-            //ratio 2.745
-            height: 100px;
-            width: 300px;
+            //ratio 3.4
+            height: 80px;
+            width: 272px;
         }
         .footer-left__sub-content{
             .footer-left__icons{
@@ -31,12 +39,18 @@
                 }
             }
         }
+        .equal-housing-opportunity{
+            img{
+                height: 15px;
+                width: 17px;
+            }
+        }
     }
     .footer-right{
         width: 80%;
         margin: auto;
         order:0; 
-        @media(min-width:991px){
+        @media(min-width:768px){
             order: 1;
         }
         h3{
@@ -49,6 +63,8 @@
             font-size: 21px;
             letter-spacing: .6px;
             text-align:center;
+            padding-left: 10px;
+            padding-right: 10px
         }
         .footer-right__links{
             display:flex;

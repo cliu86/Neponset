@@ -26,7 +26,7 @@
             </div>   
         </section>
 
-        <div class="location-map row">
+        {{-- <div class="row" id="location-map">
             <div class="col-md-3 col-12 location-map__filter">
                 <a href="">Restaurant</a>
                 <a href="">Retail</a>
@@ -37,12 +37,12 @@
                 <a href="">Transportation</a>
             </div>
             <div class="col-md-9 col-12 acf-map"></div>
-        </div>
+        </div> --}}
 
         <style type="text/css">
             .acf-map {
                 width: 100%;
-                height: inherit;
+                min-height: 500px;
             }
             /* fixes potential theme css conflict */
             .acf-map img {
