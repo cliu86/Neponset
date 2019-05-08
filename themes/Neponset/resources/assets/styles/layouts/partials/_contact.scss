@@ -23,6 +23,8 @@
         }
     }
     .footer-left{
+        justify-content: flex-start;
+        padding-top: 5em;
         @media(max-width: 990px){
             order: 2;
         }

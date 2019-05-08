@@ -53,11 +53,10 @@
         margin-top: 1em;
     }
     p{
+        font-weight: 400;
+        font-size: 1rem; 
+        max-width: 82%;
         color: $blue;
-        font-weight: 500;
-        @media(min-width:991px){
-            font-size:1.1rem;
-        }
     }
     .hero-title-mobile{
         display: block;

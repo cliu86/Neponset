@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content') 
-  <section class="home-hero row">
+  <section class="home-hero row" style="background-image: url(@asset('images/corner_render.jpg'))">
      <img src="@asset('images/Neponset_Logo_color_White.png')">
      <div class="home-hero__text">
         <span class="home-hero__text__city">CITY</span>

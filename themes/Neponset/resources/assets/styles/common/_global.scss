@@ -1,6 +1,122 @@
-body{
-    // font-family: "azo-sans-web", sans-serif;
-    // font-weight: 400;
-    // font-style: normal;
+html, body{
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 400;
+    color: #0d4259 !important;
 }
+
+.feature-content {
+    h1{
+        font-weight: 400;
+    }
+    p{
+        font-weight: 300;
+    }
+}
+.home-content-below-hero {
+    h2{
+        font-weight: 500;
+    }
+    h3{
+        font-weight: 400;
+    }
+    h5{
+        font-weight: 300;
+    }
+    p{
+        font-weight: 200;
+    }
+    
+}
+
+
+// Added on 05/08/2019
+// @supports (-ms-ime-align:auto) { 
+// 	.home-hero img { 
+// 		min-height: 20vh;
+// 		width: 350px;
+// 	} 
+// }
+.navbar-active {
+    background: #fff;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.home-hero img {
+    position: absolute;
+    left: 131px;
+    top: 113px;
+    z-index: 2;
+    width: 400px;
+    height: 236px;
+}
+
+.custom-page__sub-content p,
+.residences .residences__kitchen__bath .residences__kitchen-img-desc{
+	letter-spacing: 0.6px;
+}
+
+.footer-content h3 b{
+	font-weight: bold;
+}
+
+@media (min-width: 991px){
+		.image-gallery .gallery-img.img-small:before {
+			font-size: 1.8em;
+			padding: 0;
+			font-weight: 400;
+	}
+}
+
+.team .team-item p {
+   font-weight: 300;
+}
+.team .team-item h4{
+	background: white;
+	padding: 0;
+}
+
+.updates-upper{
+	height: 250px;
+	background: #0d4259;
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+  font-size: 9em;
+	font-weight: 200;
+}
+
+.updates-upper span{
+	margin-bottom: -60px
+}
+.updates-upper-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+@media (min-width: 991px){
+	.image-gallery .gallery-img.img-small:before {
+			font-size: 2.5em;
+	}
+}
+
+
+.amenities-space-bottom{
+    margin-bottom: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

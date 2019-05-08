@@ -2,7 +2,7 @@
     <?php if( have_rows('gallery-images') ): ?>
         <section class="image-gallery row">
             <div class="amenities col-md-10 offset-md-1 col-12">
-                <div class="row">
+                <div class="row amenities-space-bottom" >
                     <?php while( have_rows('gallery-images') ): the_row(); 
                         $gallery_img = get_sub_field('img');
                         $gallery_img_text = get_sub_field('text');

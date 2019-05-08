@@ -1,28 +1,26 @@
 /* --------------- Home page ------------------  */
 .home-hero{
-    background-image: url('../../images/corner_render.jpg');
     background-size: cover;
     height: 30vh;
     background-position: center;
     @media(min-width: 991px){
-        height: 90vh;
+        height: 100vh;
         background-position: center center;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
         flex-direction: column;
         margin-top: -65px;
+        min-height:450px;
     }
     img{
-        height: 190px;
-        width: 300px;
-        min-width: 20vw;
+        height: 200px;
         min-height: 30vh;
         display: none;
         z-index: 2;
         margin-top: 5vh;
         left: 5vw;
-        position: relative;
+        position: absolute;
         @media(min-width: 991px){
             display: block;
         }
@@ -30,15 +28,19 @@
     .home-hero__text{
         display:none;
         @media(min-width: 991px){
-            display: flex;
-            color: white;
-            font-weight: 100;
-            flex-direction: column;
-            left: 7vw;
-            position: relative;
-            bottom: -58px;
+            display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			color: #fff;
+			font-weight: 100;
+			flex-direction: column;
+            left: 120px;
+            position: absolute;
+            bottom: -85px;
         }
         .home-hero__text__city{
+            font-weight: 200;
+            line-height:1;
             font-size: 7.5em;
             @media(min-width: 1650px){
                 font-size: 9em;
@@ -46,6 +48,7 @@
         }
         .home-hero__text__life{
             font-size: 14em;
+            font-weight: 200;
             margin-top: -10vh;
             @media(min-width: 1650px){
                 font-size: 17em;
@@ -61,6 +64,11 @@
     width: 80%;
     margin: auto;
     text-align: center;
+}
+.home-content-below-hero p { 
+    max-width:82%; 
+    margin-left:auto;
+    margin-right:auto;
 }
 .home-features{
     .home-feature{
@@ -132,7 +140,6 @@
         text-align:center;
         color: $blue;
         h1{
-            font-weight: 600;
             letter-spacing: 2px;
             margin-bottom: .5em;
             text-transform: uppercase;
@@ -165,10 +172,6 @@
        padding-bottom: 2em;
        text-align:center;
        h1{
-
-
-
-           font-weight: 300;
            letter-spacing: 2px;
            font-size: 3em;
             @media(min-width: 991px){
@@ -177,7 +180,9 @@
             }
        }
        p{
-           padding: 0 5em;
+            padding: 0 5em;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
        }
    } 
 }

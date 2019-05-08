@@ -15,7 +15,7 @@
       <a class="navbar-brand" href="{{ home_url('/') }}"><img src="@asset('images/Neponset_Logo_Long.png')"></a>
       <a class="navbar-phone-call" href="tel:6174362000"><img src="@asset('images/call.svg')"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" style="background-image: url(@asset('images/menu-icon.svg'))" ></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">

@@ -1,6 +1,6 @@
-{{--
-  Template Name: Interior Page Template
---}}
+<?php 
+  //Template Name: Interior Page Template
+?>
 
 @extends('layouts.app')
 
@@ -36,7 +36,6 @@
     @include('partials.location')
     @include('partials.gallery')
     @include('partials.team')
-    @include('partials.updates')
     @include('partials.availability')
 
 
